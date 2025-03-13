@@ -1,0 +1,8 @@
+data = (50, 100, 150, 200, 250)
+print("Zawartośc krotki: " , (data))
+print("Typ danych: " , (type(data)))
+print("Długość krotki: " , (len(data)))
+print("Ostatni element krotki: " , (data[-1]))
+print("Ostatni element krotki: " , len(data) -1)
+print("Elementy od 2 do 4: " , data[2:4])
+print("Trzeci element od końca z ujemnym indeksem: " , data[-3])
