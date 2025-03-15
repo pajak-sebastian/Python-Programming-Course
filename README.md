@@ -1,2 +1,2 @@
 # Kurs
-Nauka. Kurs programowania
+Nauka. Kurs programowania w pythonie
