@@ -32,9 +32,6 @@ while True:
     while True:
         try:
             secondNum = input("Podaj drugą liczbę: ")
-            if operation == "/" and secondNum == 0:
-                print("Nie można dzielić przez 0. Podaj inną liczbę! ")
-                break
             if secondNum == "exit":
                 break
             if secondNum == "reset":
@@ -46,20 +43,20 @@ while True:
             print("Podaj liczbę!")
             continue
 
-    if operation == "+":
-        result = num + secondNum
-
-    if operation == "-":
-        result = num - secondNum
-
-    if operation == "*":
-        result = num * secondNum
-
-    if operation == "/":
-        result = num / secondNum
-    
-    if operation == "**":
-        result = num ** secondNum
+    try:
+        if operation == "+":
+            result = num + secondNum
+        elif operation == "-":
+            result = num - secondNum
+        elif operation == "*":
+            result = num * secondNum
+        elif operation == "/":
+            result = num / secondNum
+        elif operation == "**":
+            result = num ** secondNum
+    except ZeroDivisionError:
+        print("Nie można dzielić przez 0 ")
+        break
 
     print(f"Wynik: {str(num)} {operation} {str(secondNum)} = {str(result)}")
 
