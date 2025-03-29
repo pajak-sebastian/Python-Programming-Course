@@ -7,7 +7,7 @@ def calculateHumanYears(dogYears):
 
 while True:
     dogYears = float(input("Wprowadź wiek psa: "))
-    if dogYears == "exit":
+    if dogYears == "exit":                              # <-- in progress
         break
     result = calculateHumanYears(dogYears)
     print(f"Wiek psa w ludzkich latach wynosi: {result}")
