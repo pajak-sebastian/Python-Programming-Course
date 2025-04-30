@@ -1,6 +1,6 @@
 #pip install python
 #pip install python-docx
-#92px Arial
+#91px Arial
 #dodać funkcjonalność która ogranicza dodanie zakresu ponad 100 liczb
 import sys
 import os
